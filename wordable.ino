@@ -1,6 +1,6 @@
 #include <Arduboy2.h>
 
-#include "wordlist.h"
+#include "output.h"
 
 int ptr = 0;
 
@@ -17,6 +17,7 @@ void loop() {
   arduboy.clear();
   arduboy.print("Hello World");
   arduboy.print(wordlist1[ptr]);
+  arduboy.print(wordlist2[ptr]);
   arduboy.display();
 
   ptr += 1;
